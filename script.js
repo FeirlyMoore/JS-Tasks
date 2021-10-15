@@ -1,4 +1,6 @@
-let arrayList = document.querySelector('.list');
+let arrayList = document.querySelector('.task-block-1__list');
+let arrayList2 = document.querySelector('.task-block-2__list');
+
 
 let nums = [1,2,3,4,5,6,7,8,9,10,762367,45,28,666,39];
 // let accumulator = [];
@@ -16,7 +18,12 @@ for (let i = 0; i < nums.length; i++) {
 	arrayList.append(newElement)
 }
 
+console.log("Задание 2");
 for (let i = 1; i <= 10; i++) {
+  let newElement = document.createElement('li');
+  newElement.classList.add('list__item');
   let sharp = '#'.repeat(i);
   console.log(sharp);
+  newElement.textContent = sharp;
+  arrayList2.append(newElement)
 }
