@@ -18,9 +18,21 @@
 	text-align: center;
 }
 
+.deck-block {
+	position: absolute;
+	z-index: -1;
+	top: 13%;
+	left: 50%;
+	margin-left: -40em;
+	width: 80em;
+	height: 80em;
+	border-radius: 50%;
+	background-image: linear-gradient(90deg, lime, cyan);
+}
+
 .title {
-	font-size: 3em;
-	margin: 10px 0;
+	font-size: 7em;
+	margin: 30px 0;
 	color: orange;
 }
 
@@ -30,15 +42,31 @@
 
 .list__item {
 	width: 70vw;
+	position: relative;
 	height: fit-content;
 	padding: 10px 0 10px;
 	text-align: center;
 	margin: 0 0 10px;
-	font-size: 2em;
-	background-color: #ffffff;
+	font-size: 3em;
+	font-weight: 600;
+	/*background-color: transparent;*/
+	background-color: rgba(255, 255, 255, .3);
 	border: 2px solid orangered;
 	border-radius: 5px;
 	color: #222222;
+	/*filter: blur(2px);*/
+}
+
+.list__item::before {
+	content: "";
+	position: absolute;
+	width: 70vw;
+	height: 35px;
+	top: 0;
+	left: 0;
+	/*border: 3px solid yellow;*/
+	background-color: rgba(255, 255, 255, .3);
+	filter: blur(5px);
 }
 
 .list__item:hover {
