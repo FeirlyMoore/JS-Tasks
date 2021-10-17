@@ -27,3 +27,18 @@ for (let i = 1; i <= 10; i++) {
   newElement.textContent = sharp;
   arrayList2.append(newElement)
 }
+
+class Animal {
+  constructor (props) {
+    this.name = props.name
+    this.age = props.age 
+    this.hasTail = props.hasTail
+  }
+}
+
+const animal = new Animal({
+  name: 'Animal',
+  age: 5,
+  hasTail: true
+})
+
