@@ -29,10 +29,17 @@ for (let i = 1; i <= 10; i++) {
 }
 
 class Animal {
+
+  static type = 'ANIMAL'
+
   constructor (props) {
     this.name = props.name
     this.age = props.age 
     this.hasTail = props.hasTail
+  }
+
+  voice() {
+    console.log('I am animal');
   }
 }
 
